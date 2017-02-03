@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+#TODO
+
+* Add documentation
+* Add seed data
+* Add client side querying examples
