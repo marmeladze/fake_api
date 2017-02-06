@@ -8,6 +8,10 @@ class PeopleController < ApplicationController
     render json: @people
   end
 
+  def search
+    @person = params[:ic_id].nil? ?  [] : Person.search(params[:ic_id])
+    render json: @person
+  end
   # GET /people/1
   def show
     render json: @person

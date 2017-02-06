@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+
+  get 'people/search/:ic_id', to: 'people#search'
+
   resources :people do 
     get :attached_bills, on: :member
   end
